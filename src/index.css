@@ -625,8 +625,10 @@ body {
 .logo-group {
   display: flex;
   align-items: center;
-  justify-content: space-around;
-  width: 100vw;
+  justify-content: center;
+  gap: 6rem;
+  padding: 0 3rem;
+  width: max-content;
 }
 
 @keyframes logoScroll {
@@ -887,6 +889,82 @@ footer {
   .features-grid {
     grid-template-columns: 1fr;
     gap: 2rem;
+  }
+
+  /* Hero Mobile Redesign */
+  .hero-new {
+    flex-direction: column;
+    height: auto;
+    min-height: 100vh;
+  }
+
+  .hero-new-left {
+    flex: 1 1 50vh;
+    padding: 15vh 5% 5vh 5%;
+    align-items: center;
+    text-align: center;
+  }
+
+  .hero-new-tagline {
+    justify-content: center;
+  }
+
+  .hero-new-title {
+    font-size: 3rem;
+  }
+
+  .hero-new-desc {
+    margin: 0 auto 2rem;
+  }
+
+  .hero-new-right {
+    position: relative;
+    width: 100%;
+    height: 50vh;
+    border-radius: 0;
+  }
+
+  /* Footer Mobile Redesign */
+  .footer-info {
+    flex-direction: column;
+    gap: 2rem;
+    text-align: center;
+  }
+
+  .footer-info div {
+    text-align: center;
+  }
+
+  .footer-logo img {
+    height: 80px !important;
+    width: 80px !important;
+  }
+
+  /* Carousel Mobile Rescaling */
+  .carousel-3d {
+    transform: scale(0.65);
+    margin-top: -50px;
+  }
+
+  /* Typography Rescaling */
+  .heading-primary,
+  .heading-secondary {
+    font-size: 2.2rem;
+  }
+
+  /* Logo Carousel Mobile Override */
+  .logo-group {
+    gap: 3rem;
+    padding: 0 1.5rem;
+  }
+
+  .brand-logo {
+    height: 40px;
+    width: 90px;
+  }
+
+  .atelier-poem {
+    font-size: 1.8rem;
   }
 }
 
